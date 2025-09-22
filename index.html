@@ -6,6 +6,13 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="/style.css"> -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
       ul li {
         padding: 8px 16px;
@@ -15,22 +22,46 @@
         color: rgb(168 85 247);
         background-color: rgba(184, 187, 190, 0.858);
       }
-      .btn1{
+      .btn1 {
         padding: 10px 16px;
         background-color: rgb(168 85 247);
         color: white;
         font-weight: 700;
         border-radius: 5px;
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
       }
-      .btn1:hover{
+      .btn1:hover {
         background-color: rgb(153, 49, 250);
         transform: scale(1.05);
+      }
+      .btn2 {
+        padding: 10px 16px;
+        border: 1px solid slategrey;
+        font-weight: 700;
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+      }
+      .btn2:hover {
+        color: rgb(168 85 247);
+        border: 1px solid rgb(168 85 247);
+        transform: scale(1.05);
+      }
+      a {
+        padding: 5px;
+        font-size: 20px;
+        color: rgb(168 85 247);
+      }
+      a:hover {
+        background-color: rgb(168 85 247);
+        color: white;
+        border-radius: 5px;
       }
     </style>
   </head>
   <body>
-    <nav class="bg-slate-50 fixed w-full flex items-center justify-around py-6 shadow-md">
+    <nav
+      class="bg-slate-50 fixed w-full flex items-center justify-around py-6 shadow-md"
+    >
       <div class="flex gap-3 items-center">
         <h2
           class="text-2xl font-semibold text-white bg-purple-500 px-4 py-2 rounded-full"
@@ -52,7 +83,10 @@
     <header class="h-screen flex justify-around items-center mx-40">
       <div class="w-1/2">
         <div>
-          <h1 class="text-5xl font-bold text-slate-800">Hello, I'm <br> Atik Rahad</h1>
+          <h1 class="text-5xl font-bold text-slate-800">
+            Hello, I'm <br />
+            Atik Rahad
+          </h1>
           <p class="my-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
             id cum quo delectus in ad dolor accusantium quaerat quam quisquam
@@ -63,7 +97,41 @@
         </div>
         <div></div>
       </div>
-      <img class="w-80" src="/my.png" alt="" />
+      <img class="w-80" src="./my.png" alt="" />
     </header>
+
+    <!-- about section  -->
+    <div
+      class="main max-w-6xl p-20 bg-slate-100 rounded-md shadow-2xl mx-auto flex items-center justify-between"
+    >
+      <div class="child1 w-1/2 relative">
+        <img class="bg-slate-200 rounded-md" src="./my.png" alt="" />
+        <div
+          class="absolute -bottom-5 left-28 bg-white p-4 rounded-md shadow-xl"
+        >
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="child2 w-1/2">
+        <h1 class="text-3xl font-bold">
+          I'm a proffessional web developer and designer
+        </h1>
+        <p class="text-slate-500 my-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam amet
+          voluptatum tempora quisquam. Corporis delectus dicta quidem sit enim
+          placeat rerum totam quia dolore tempore rem sunt nostrum autem neque
+          illo dolor voluptas eos, optio harum ab eius praesentium ullam. Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Ipsum rerum
+          dolorem mollitia esse adipisci alias recusandae odio velit nostrum
+          repellat?
+        </p>
+        <button class="btn1">my projects</button>
+        <button class="btn2"><i class="fa-solid fa-download"></i> Download CV</button>
+      </div>
+    </div>
   </body>
 </html>
